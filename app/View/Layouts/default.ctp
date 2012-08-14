@@ -10,6 +10,7 @@
 
 	<!-- Le styles -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/font-awesome.css">
 	<link rel="stylesheet" href="/css/app.css">
 	<style>
@@ -49,8 +50,13 @@
   						<li><a href="#contact">Coaches</a></li>
   						<li><a href="#contact">Promotions</a></li>
   					</ul>
+  					<ul class="nav pull-right">
+  						<li class="divider-vertical"></li>
+  						<li><a href="#">$4,100</a></li>
+  						<li class="divider-vertical"></li>
+  						<li><a href="#">August 2012</a></li>
+  					</ul>
   				</div><!--/.nav-collapse -->
-  				<p class="pull-right navbar-text">Aug 13, 2012</p>
   			</div>
   		</div>
   	</div>
@@ -90,7 +96,7 @@
   								<td><div class="progress"><div class="bar" style="width: 100%;"></div></div></td>
   							</tr>
   						</table>
-  						<div class="btn-group"><a href="#" class="btn">Schedule Fight</a><a href="#" class="btn">Train</a></div>
+  						<div class="btn-group"><a href="#" class="btn">Schedule Fight</a><a class="btn" data-toggle="modal" href="#train">Train</a></div>
   					</div>
   				</div>
   			</li>
@@ -125,7 +131,12 @@
   								<td><div class="progress progress-warning"><div class="bar" style="width: 40%;"></div></div></td>
   							</tr>
   						</table>
-  						<div class="btn-group"><a href="#" class="btn">Schedule Fight</a><a href="#" class="btn">Train</a></div>
+  						<div class="btn-group"><a href="#" class="btn">Schedule Fight</a><a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Train <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Striking ($1,000)</a></li>
+							<li><a href="#">Wrestling ($10,000)</a></li>
+						<!-- dropdown menu links -->
+						</ul></div>
   					</div>
   				</div>
   			</li>
@@ -160,7 +171,7 @@
   								<td><div class="progress progress-danger"><div class="bar" style="width: 20%;"></div></div></td>
   							</tr>
   						</table>
-  						<div class="btn-group"><a href="#" class="btn">Schedule Fight</a><a href="#" class="btn">Train</a></div>
+  						<div class="btn-group"><a href="#" class="btn">Schedule Fight</a><a href="#" class="btn disabled">Training</a></div>
   					</div>
   				</div>
   			</li>
@@ -195,7 +206,7 @@
   								<td><div class="progress"><div class="bar" style="width: 75%;"></div></div></td>
   							</tr>
   						</table>
-  						<div class="btn-group"><a href="#" class="btn disabled">4 Days Until Fight</a> <a href="#" class="btn">Train</a></div>
+  						<div class="btn-group"><a href="#" class="btn disabled">2 Months Until Fight</a> <a class="btn" data-toggle="modal" href="#train">Train</a></div>
   					</div>
   				</div>
   			</li>
@@ -268,6 +279,8 @@
   			</li>
   		</ul>
   	</div>
+
+  	<?php echo $this->element('train');?>
 
     <!-- Le javascript
     ================================================== -->
