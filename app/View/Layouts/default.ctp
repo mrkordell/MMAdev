@@ -50,13 +50,12 @@
   						<li><a href="#contact">Coaches</a></li>
   						<li><a href="#contact">Promotions</a></li>
   					</ul>
-  					<ul class="nav pull-right">
-  						<li class="divider-vertical"></li>
-  						<li><a href="#">$4,100</a></li>
-  						<li class="divider-vertical"></li>
-  						<li><a href="#">August 2012</a></li>
-  					</ul>
   				</div><!--/.nav-collapse -->
+				<ul class="nav pull-right">
+					<li class="divider-vertical"></li>
+					<li><a href="#">$4,100</a></li>
+					<li class="divider-vertical"></li>
+				</ul>
   			</div>
   		</div>
   	</div>
